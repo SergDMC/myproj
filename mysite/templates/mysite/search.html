@@ -1,0 +1,7 @@
+<form action="{% url 'tel_search' %}" method="get">
+<input type="search", type="text" name="q" placeholder="Поиск номеров" />
+    <button type="submit">search</button>
+</form>
+<!--> Сюда можно включить шаблон с результатами через include
+      Или выделить для него отдельный блок <-->
+{% include "template/result_template.html" %}

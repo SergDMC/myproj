@@ -12,4 +12,9 @@ class Tel(models.Model):
         self.published_date = timezone.now()
         self.save()
 
+    class Meta:
+        ordering = ['FIO']
+
+    def __str__(self):
+        return self.fio
  
